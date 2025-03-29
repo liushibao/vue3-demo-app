@@ -41,7 +41,7 @@ function onQrCodeModalMounted() {
     ctx.fillText(text, x, y);
   }
 
-  addText("某某邀约二维码", titleFontSize, size / 2, titleY);
+  addText(`${user.value.name}的邀约二维码`, titleFontSize, size / 2, titleY);
 
   // draw cells
   ctx.fillStyle = '#000000';
