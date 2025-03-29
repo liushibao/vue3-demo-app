@@ -1,0 +1,11 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJqdGkiOiIyOGQ3MmEwYS1iNjQzLTQyMGUtOGUyZi1kODAwMjFiZjJjM2EiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDMvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAzLyIsIm5iZiI6MTc0MzI1NjY0NywiZXhwIjoxNzQzMjYzODQ3LCJpYXQiOjE3NDMyNTY2NDd9.u0fOVYFT4poORkg_0QrMTlChpPd_TfzHYrYY2YmnRzQ",
+  "user": {
+    "id": 2,
+    "wxOpenId": "1112",
+    "name": "刘某",
+    "mob": "18900331832",
+    "idCardNumber": "43000019000306021X",
+    "birthday": "1900-03-06"
+  }
+}

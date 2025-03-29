@@ -1,0 +1,11 @@
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJqdGkiOiI0YzhiNzEwYi0wNzM4LTQ5ZjEtOGU5NS04MmI3MzRjMmZkODQiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDMvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAzLyIsIm5iZiI6MTc0MzI1NjU5NSwiZXhwIjoxNzQzMjYzNzk1LCJpYXQiOjE3NDMyNTY1OTV9.LHQRDo3MVOkBNZ2-QK0qX50mhVy8j_ZpVEsD1Wuljfw",
+    "user": {
+        "id": 3,
+        "wxOpenId": "1113",
+        "name": null,
+        "mob": null,
+        "idCardNumber": null,
+        "birthday": null
+    }
+}

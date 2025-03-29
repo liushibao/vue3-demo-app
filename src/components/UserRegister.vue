@@ -18,7 +18,7 @@ const smsCode = ref<string | null>(null);
 const isSmsCodePass = computed(() => smsCode.value != null && /^\d{6}$/.test(smsCode.value));
 
 async function submit() {
-  const res = await httpClient.post("/api/auth/reg", user.value);
+  const res = await httpClient.post("/api/auth/reg/Reg", user.value);
   if (res.isSuccess == true) {
     user.value = res.user;
     isRegistered.value = true;

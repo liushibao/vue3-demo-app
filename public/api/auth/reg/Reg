@@ -1,0 +1,11 @@
+{
+  "isSuccess": true,
+  "user": {
+    "id": 2,
+    "wxOpenId": "1112",
+    "name": "刘某",
+    "mob": "18900331832",
+    "idCardNumber": "43000019000306021X",
+    "birthday": "1900-03-06"
+  }
+}

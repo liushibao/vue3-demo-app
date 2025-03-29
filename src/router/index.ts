@@ -26,12 +26,22 @@ const router = createRouter({
   ],
 })
 
-router.beforeEach((to, from, next) => {
-  const { isRegistered } = useAuthStore();
+router.beforeEach(async (to, from, next) => {
+  let { isRegistered } = useAuthStore();
   if (to.name != "home") {
-    if (httpClient.accessToken == null)
-      window.location.href = `${import.meta.env.VITE_API_BASE_URL}/api/auth/login?redirect_uri=${encodeURIComponent(`${window.location.protocol}//${window.location.host}${import.meta.env.VITE_BASE_URL}${to.path}`)}`;
-    else if (to.name != "register" && isRegistered != true)
+    if (httpClient.accessToken == null) {
+      if (import.meta.env.VITE_API_BASE_URL != `${window.location.protocol}//${window.location.host}`)
+        return window.location.href = `${import.meta.env.VITE_API_BASE_URL}/api/auth/login?redirect_uri=${encodeURIComponent(`${window.location.protocol}//${window.location.host}${import.meta.env.VITE_BASE_URL}${to.path}`)}`;
+      else {
+        // simulate login process for pure front-end developers
+        const res: any = await httpClient.get("/api/auth/login/token", { code: "1122" });
+        httpClient.accessToken = res.token;
+        const authStore = useAuthStore();
+        authStore.$patch({ user: res.user, isRegistered: res.user.name != null });
+        isRegistered = res.user.name != null;
+      }
+    }
+    if (to.name != "register" && isRegistered != true)
       next({ name: 'register' });
     else if (to.name == "register" && isRegistered == true)
       next({ name: 'user-info' });

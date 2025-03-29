@@ -1,0 +1,32 @@
+[
+  {
+    "year": 2019,
+    "amount": 10753,
+    "growthRate": 0
+  },
+  {
+    "year": 2020,
+    "amount": 10067,
+    "growthRate": 0.03
+  },
+  {
+    "year": 2021,
+    "amount": 10698,
+    "growthRate": -0.07
+  },
+  {
+    "year": 2022,
+    "amount": 10792,
+    "growthRate": 0.05
+  },
+  {
+    "year": 2023,
+    "amount": 10307,
+    "growthRate": -0.03
+  },
+  {
+    "year": 2024,
+    "amount": 10087,
+    "growthRate": 0
+  }
+]

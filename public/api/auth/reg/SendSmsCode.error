@@ -1,0 +1,5 @@
+{
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "手机号已绑定其他用户。",
+    "status": 400
+}
